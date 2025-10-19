@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maaza clone</title>
+    <style>
+        .main-body{
+            height: 3000px;
+            width: 100%;
+            background-color: #eae8e8;
+        }
+        body{
+            margin: 0px;
+        }
+        .body-header{
+            height: 170px;
+            width: 100%;
+            background-color: white;
+        }
+        .manu-header{
+            height: 70px;
+            width: 100%;
+            background-color: white;
+        }
+        .manu-border:hover{
+            text-decoration: underline;
+            text-underline-offset: 30px;
+        }
+        
+        .brand-logo{
+            margin-left: 120px;
+            margin-top: 31px;
+            cursor: pointer;
+            background: none;
+        }
+        .manu-item{
+           display: flex;
+           font-family: sans-serif;
+           cursor: pointer;
+           gap: 34px;
+           font-size: 18px;
+           margin-left: 305px;
+           margin-top: -46px;
+        }
+        .maaza-image{
+            height: 50px;
+            margin-left: 725px;
+            margin-top: 37px;
+        }
+        .image1{
+
+            margin-left: 113px;
+            width: 1273px;
+            margin-top: 55px;
+            border-radius: 20px;
+        }
+
+         .product{
+            text-align: center;
+             font-size: 37px;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            font-weight: 700;
+            margin-top: 56px;
+
+        }
+        .image2{
+
+            margin-left: 175px;
+            border-radius: 16px;
+            
+        }
+        .body-text{
+            margin-left: 865px;
+            margin-top: -368px;
+            font-size: 20px;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+        }
+        .r-logo{
+            margin-left: 365px;
+            float: left;
+            margin-top: -154px;
+            font-size: 17px;
+        }
+        .explore-button{
+            margin-left: -1px;
+            height: 41px;
+            width: 299px;
+            border-radius: 29px;
+            float: left;
+            margin-top: 15px;
+            font-size: 20px;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .explore-button:hover{
+            background-color: lightgray;
+        }
+        .video{
+             width: 1100px;
+             height: 650px;
+             border-radius: 20px;
+             margin-top: 250px;
+             
+        }
+        .follow-maaza{
+            height: 98px;
+            width: 1094px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin-left: 207px;
+            margin-top: 110px;
+
+        }
+        .maaza-text{
+            color: #ffffff;
+            padding-top: 30px;
+            margin-left: 30px;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            
+        }
+        .app-logo{
+            color: #ffffff;
+            border: 2px solid white;
+            margin-top: -9px;
+            border-radius: 24px;
+            width: 28px;
+            height: 27px;
+            padding-left: 9px;
+            padding-top: 9px;
+            cursor: pointer;
+            
+        }
+        .app-logo:hover{
+
+            background-color: rgb(35, 35, 35);
+
+        }
+        .logo-container{
+            display: flex;
+            margin-top: -46px;
+            display: flex;
+            gap: 10px;
+            float: right;
+            margin-right: 41px;
+        }
+        .paraghraph{
+            margin-left: 212px;
+            margin-top: 67px;
+             
+        }
+        .paraghraph-container{
+            margin-left: 209px;
+            font-size: 18px;
+            margin-top: 50px;
+            font-size: 19px;
+            font-family: system-ui;  
+        }
+        .footer-body{
+            height: 675px;
+            width: auto;
+            background-color: black;
+            height: 670px;
+            margin-top: 100px;
+        }
+        .white-cocacola{
+            padding-left: 200px;
+            padding-top: 146px;
+        }
+        .footer-button{
+            color: white;
+            display: flex;
+            gap: 1px;
+            font-size: 17px;
+            float: right;
+            margin-right: 215px;
+            margin-top: -29px;
+            border: 2px solid white;
+            height: 33px;
+            width: 200px;
+            border-radius: 22px;
+        }
+        .footer-button:hover{
+
+            background-color: rgb(35, 35, 35);
+            cursor: pointer;
+
+        }
+        .button-text{
+            color: white;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-top: 4px;
+        }
+        .footer-location{
+            margin-top: 8px;
+            margin-left: 12px;
+        }
+        .first-section{
+            color: white;
+        }
+        .second-section{
+            color: white;
+        }
+        .third-section{
+            color: #ffffff;
+        }
+        .ul-list
+        {
+            list-style-type: none;
+            font-family: Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            
+        }
+        .head{
+             font-family:  Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+            color: lightgray;
+            margin-top: 65px;
+            margin-left: 207px;
+            display: flex;
+            gap: 166px;
+        }
+        .head-content{
+            font-size: 9px;
+            cursor: pointer;
+        }
+        .footer-content-container{
+            display: flex;
+            gap: 81px;
+            margin-left: 165px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .end-content{
+            margin-top: -150px;
+            float: right;
+            margin-right: 198px;
+            color: white;
+             font-family:  Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+        }
+        .hr{
+            margin-top: -193px;
+            width: 1100px;
+
+        }
+        .hr2{
+            margin-top: -282px;
+            width: 1100px;
+
+
+        }
+        
+        
+        
+    </style>
+<link rel="stylesheet" href="app-logo2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- footer app logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="main-body">
+        <div class="body-header">
+            <div class="manu-header">
+                <img class="brand-logo" src="C:\Users\vishn\OneDrive\Desktop\maaza\img\Coke-company-logo-black.svg" alt="">
+                    <nav class="manu-item">
+                    <div class="manu-border"><h5 class="font">Brands</h5></div>
+                    <div class="manu-border"><h5 class="font">Discover<i class="fa-solid fa-angle-right"></i></h5></div>
+                    <div class="manu-border"><h5 class="font">Impact<i class="fa-solid fa-angle-right"></i></h5></div>
+                    <div class="manu-border"><h5 class="font">Shop<i class="fa-solid fa-angle-right"></i></h5></div>
+                    </nav>
+            </div>
+            <img class="maaza-image" src="C:\Users\vishn\OneDrive\Desktop\maaza\img\maaza desktop-01.svg" alt="">
+        </div>
+
+        <img class="image1" src="C:\Users\vishn\OneDrive\Desktop\maaza\img\width1960.webp" alt="">
+        <h1 class="product">Products</h1>
+        <img class="image2" src="C:\Users\vishn\OneDrive\Desktop\maaza\img\width1960 (1).webp" alt="">
+        <div class="body-text">
+            <h1 class="unwind-maaza">Unwind with Maaza</h1>
+            <p>Universally loved for its sweet and smooth taste,<br> Maaza is enticing mango lovers since 1976. Engage, <br>indulge and enjoy round the year.</p>
+            <i class="fa-regular fa-registered r-logo"></i>
+            <button class="explore-button">
+                Explore product
+            </button>
+        </div>
+
+        
+             <center> <iframe class="video" src="https://www.youtube.com/embed/9qBOpN3XGT4?si=l7QVNy_hBm9O7e5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe></center>    
+            
+           
+                <div class="follow-maaza">
+                <h1 class="maaza-text">Follow Maaza</h1>
+                <div class="logo-container">
+                    <div class="app-logo"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                </div>
+                <div class="paraghraph-container">
+                    <p>MAAZA ORIGINAL: READY TO SERVE FRUIT DRINK. MAAZA MANGO CONTAINS BLEND OF MANGO PULP INCLUDING ALPHONSO.<br> MAAZA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT <br>
+
+                    <p> MAAZA AAM PANNA: READY TO SERVE FRUIT DRINK. MAAZA AAM PANNA IS A REGISTERED TRADEMARK OF THE COCA-COLA <br> COMPANY. VEGETARIAN PRODUCT</p>
+                </div>
+                <footer class="footer-body">
+
+                    <div class="white-cocacola"><img src="C:\Users\vishn\OneDrive\Desktop\maaza\img\logo-white-large (1).svg" alt=""></div>
+                    <div class="footer-button">
+                        <div><i class="fa-solid fa-location-dot footer-location"></i></div>
+                        <div class="button-text">India | English</div>
+                    </div>
+                    <!-- underline -->
+
+                    <div class="head">
+                        <p class="head-content">ABOUT US</p>
+                        <p class="head-content">NEED HELP?</p>
+                    </div>
+                     
+                     <div class="footer-content-container">
+                        <div class="first-section">
+                         
+                        <ul class="ul-list">
+                            <li>Our company</li>
+                            <br>
+                            <li>Media Center</li>
+                            <br>
+                            <li>History</li>
+                            <br>
+                            <li>Careers</li>
+                            <br>
+                            <li>LeaderShip</li>
+                        </ul>
+                     </div>
+                     
+                     <div>
+                        <div class="second-section">
+                         
+                        <ul class="ul-list">
+                            <li>FAQ</li>
+                            <br>
+                            <li>Sitemap</li>
+                            <br>
+                            <li>Contact Us</li>
+                            <br>
+                        </ul>
+                     </div>
+                     </div>
+                     <div>
+                        <div class="third-section">
+                         
+                        <ul class="ul-list">
+                            <li>Terms of use</li>
+                            <br>
+                            <li>Privacy policy</li>
+                            <br>
+                            <li>Financial & Policy Documents</li>
+                            <br>
+                            <li>Supplier Terms & Condition- <br> Concentrate Production <br> Services(CPS)</li>
+                        </ul>
+                     </div>
+                     </div>
+
+                     <!-- footer app logo -->
+                      <div class="logo-container2">
+                    <div class="app-logo"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="app-logo"><i class="fa-brands fa-facebook-f"></i></div>
+                   </div>
+
+                   <!-- underline -->
+                </div>
+        </footer>
+        <div class="end-content">
+            <p class="ende-paragraph">© 2025 The CocaCola Company. All rights reserved.</p>
+        </div>
+        <div class="underline">
+            <hr style="color: blue;">
+        </div>
+        <hr class="hr">
+        <hr class="hr2">
+    </div>
+</body>
+</html>
